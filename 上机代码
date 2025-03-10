@@ -34,7 +34,7 @@ void josephus(struct Node **current, int m, int n) {
         if (step == 0) {
             step = remaining;
         }
-        // 移动 step-1 次
+        
         for (int i = 0; i < step - 1; i++) {
             *current = (*current)->next;
         }
